@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<title>Data Visualizations</title>
+<head lang ="en">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial scale=1">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<style>
+    .mySlides {display:none;}
+    </style>
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel ="stylesheet" href="stylesheet2.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="icon" href="Logo.png">
+    <link rel ="stylesheet" href="navbar.css">
+    
+    <style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #000000;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+</style>
+</head>
+<body background= 'Water.jpg'>
+    <nav class="navbar navbar-inverse">
+         <div class="container-fluid"> 
+         <div class="navbar-header">
+            <a class="navbar-brand" href="#">Mikaelyn Benson</a>
+        </div>
+            <ul class="nav navbar-nav">
+                <li><a href="Home_Page.html">Home</a></li>
+                <li><a href="DataVis.html">Data Visualizations</a></li>
+                
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">My Activities<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li class="active"><a href="work.html"></a></li>
+          <li><a href="Archery.html">Archery</a></li>
+          <li><a href="Photography.html">Photography</a></li>
+        </ul>
+      </li>
+            </ul>
+         </div>
+     </nav>
+     
+     <br>
+         <div class= "jumbotron">
+            <div class= "container">
+                <center><h3>Data Visualizations</h2></center>
+              
+                <br>
+               
+                <br>
+
+<!-- <center><div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="Vis1.jpg" style= "width:100%" width="650" height="400">
+  <img class="mySlides" src="Vis2.jpg" style="width:100%" width="650" height="400">
+  </div></center> -->
+  
+  <div class="container">
+  <img src="Vis2.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">Made with Edmonds School District data </div>
+  </div>
+</div>
+
+   <p></p>
+  <center><a href="https://public.tableau.com/profile/mikaelyn.benson#!/">Check out more of my visualizations on my Tableau Profile!</a></center>
+
+<!-- <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script> -->
+
+            </div>
+        </div>  
+  
+</body>
+</html>
