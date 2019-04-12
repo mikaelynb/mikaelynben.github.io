@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<title>Home</title>
+<head lang ="en">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial scale=1">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<style>
+    .mySlides {display:none;}
+    </style>
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel ="stylesheet" href="stylesheet2.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="icon" href="Logo.png">
+    <link rel ="stylesheet" href="navbar.css">
+</head>
+<body background= 'Water.jpg'>
+    <nav class="navbar navbar-inverse">
+         <div class="container-fluid"> 
+         <div class="navbar-header">
+            <a class="navbar-brand" href="#">Mikaelyn Benson</a>
+        </div>
+            <ul class="nav navbar-nav">
+                <li><a href="Home_Page.html">Home</a></li>
+                <li><a href="DataVis.html">Data Visualizations</a></li>
+                
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">My Activities<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li class="active"><a href="work.html"></a></li>
+          <li><a href="Archery.html">Archery</a></li>
+          <li><a href="Photography.html">Photography</a></li>
+        </ul>
+      </li>
+                
+                
+               
+            </ul>
+         </div>
+     </nav>
+            
+            
+            <br>
+         <div class= "jumbotron">
+            <div class= "container">
+                <center><h3>About Me</h2></center>
+                <br>
+               <center><p>My name is Mikaelyn and I go to the University of Washington Bothell.</p></center>   
+                    <center><p>I am currently pursuing a bachelor's degree in Mathematical Thinking and Visualization.</p></center> 
+                    <center><p>Expected Graduation Quarter: Spring 2020</p></center>
+                <br>
+               
+                <br>
+               
+                <br>
+                <center><a href="https://www.linkedin.com/in/mikaelyn-benson-aa1102115" style="text-decoration:none;"><span style="font: 80% Arial,sans-serif; color:#0783B6;"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="View Mikaelyn Benson's LinkedIn profile" style="vertical-align:middle;" border="0">&nbsp;View Mikaelyn Benson's profile</span></a></center>
+                <br>
+               <center><img src="Hi.jpg" height="550" width="600"></center>
+
+
+
+
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+            </div>
+        </div>  
+  
+</body>
+</html>

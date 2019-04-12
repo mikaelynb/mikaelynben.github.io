@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<title>Photography</title>
+<head lang ="en">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial scale=1">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<style>
+    .mySlides {display:none;}
+    </style>
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel ="stylesheet" href="stylesheet2.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="icon" href="Logo.png">
+    <link rel ="stylesheet" href="navbar.css">
+</head>
+<body background= 'Water.jpg'>
+    <nav class="navbar navbar-inverse">
+         <div class="container-fluid"> 
+         <div class="navbar-header">
+            <a class="navbar-brand" href="#">Mikaelyn Benson</a>
+        </div>
+            <ul class="nav navbar-nav">
+                <li><a href="Home_Page.html">Home</a></li>
+                <li><a href="DataVis.html">Data Visualizations</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">My Activities<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li class="active"><a href="work.html"></a></li>
+          <li><a href="Archery.html">Archery</a></li>
+          <li><a href="Photography.html">Photography</a></li>
+        </ul>
+      </li>
+                
+                
+               
+            </ul>
+         </div>
+     </nav>
+            
+            
+            <br>
+         <div class= "jumbotron">
+            <div class= "container">
+                <center><h3>About my Photography</h2></center>
+                <br>
+               <center><p>I got interested in photography in 10th grade.</p></center>
+                   <center><p>I entered the Washington State High School photography competition 2016.</p></center>    
+                    <center><p>I earned 1st place in the catergory photo manipulation and 4th place in the catergory people.</p></center>
+                <br>
+               <center><a href="http://www.kenmorecamera.com/HTML/wshs/2016/2016photocontest.htm">Washington State High School Photography Competition 2016 photos.</a></center>
+                <br>
+               
+                
+               
+<center><a href="https://www.instagram.com/mikaelynb/?ref=badgeimg">Check out some more of my photos on instagram!</a></center>
+<center><div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="Grass.jpg" style= "width:100%" width="500" height="275">
+  <img class="mySlides" src="DryFalls.jpg" style="width:100%" width="500" height="275">
+<img class="mySlides" src="Bird.jpg" style="width:100%" width="500" height="275">
+  <img class="mySlides" src="Hiking.jpg" style="width:100%" width="500" height="275">
+  <img class="mySlides" src="Water.jpg" style="width:100%" width="500" height="275">
+  </div></center>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+            </div>
+        </div>  
+  
+</body>
+</html>
